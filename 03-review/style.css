@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+:root
+{
+   --ff-primary: "Roboto", sans-serif;
+   --ff-secondary: "Open Sans", sans-serif;
+   --clr-black: #222;
+   --clr-white: #fff;
+   --clr-primary-5: hsl(205, 78%, 60%);
+   --clr-grey-10: hsl(210, 36%, 96%);
+}
+body
+{
+  font-family: var(--ff-secondary);
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+h1
+{
+   color: var(--clr-black);
+   font-weight: 800;
+   font-family: var(--ff-secondary);
+   text-align: center;
+   margin-top:  55px;
+   letter-spacing: 1mm;
+   font-size: x-large;
+}
+.underline 
+{
+   height: 0.25rem;
+   width: 5rem;
+   background: var(--clr-primary-5);
+   margin-left: auto;
+   margin-right: auto;
+}
+.review
+{
+   margin: auto;
+   margin-top: 20px;
+   height: 400px;
+   width: 800px;
+   background-color: var(--clr-white);
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+   padding: 20px;
+   
+}
+.image-container
+{
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  margin-bottom: 1.5rem
+}
+#person-img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+}
+#author
+{
+   text-align: center;
+   text-transform: capitalize;
+   font-style: var(--ff-primary);
+   letter-spacing: 2mm;
+}
+#job
+{
+   text-align: center;
+   font-size: var(--ff-secondary);
+   font-weight: bolder;
+   letter-spacing: 0.5mm;
+   text-transform: uppercase;
+   color: var(--clr-primary-5);
+   
+}
+#info
+{
+   margin: 0 50px;
+   color:rgb(99, 99, 99);
+   font-weight: bolder;
+}
+.button-container
+{
+   padding: 30px;
+   text-align: center;
+   font-weight: 800;
+   margin: 3px;
+}
+.prev-btn,
+.next-btn {
+  color: hsl(205, 84%, 71%);
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+  transition: 0.1s;
+}
+.prev-btn:hover,
+.next-btn:hover{
+   color: var(--clr-primary-5);
+}
